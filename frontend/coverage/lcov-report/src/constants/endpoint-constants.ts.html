@@ -1,0 +1,454 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/constants/endpoint-constants.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/constants</a> endpoint-constants.ts</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/141</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/17</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/107</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input oninput="onInput()" type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a>
+<a name='L110'></a><a href='#L110'>110</a>
+<a name='L111'></a><a href='#L111'>111</a>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a>
+<a name='L114'></a><a href='#L114'>114</a>
+<a name='L115'></a><a href='#L115'>115</a>
+<a name='L116'></a><a href='#L116'>116</a>
+<a name='L117'></a><a href='#L117'>117</a>
+<a name='L118'></a><a href='#L118'>118</a>
+<a name='L119'></a><a href='#L119'>119</a>
+<a name='L120'></a><a href='#L120'>120</a>
+<a name='L121'></a><a href='#L121'>121</a>
+<a name='L122'></a><a href='#L122'>122</a>
+<a name='L123'></a><a href='#L123'>123</a>
+<a name='L124'></a><a href='#L124'>124</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export const <span class="cstat-no" title="statement not covered" >HOST = "http://localhost:8000";</span>
+export const <span class="cstat-no" title="statement not covered" >API_ENDPOINT = HOST + "/ui/v1";</span>
+export const <span class="cstat-no" title="statement not covered" >WS_URL = HOST + "/websocket";</span>
+&nbsp;
+// AuthApi
+export const <span class="cstat-no" title="statement not covered" >API_AUTH_LOGIN = `${API_ENDPOINT}/auth/login`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_AUTH_REGISTRATION_CHECK = `${API_ENDPOINT}/auth/registration/check`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_AUTH_REGISTRATION_CODE = `${API_ENDPOINT}/auth/registration/code`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_AUTH_REGISTRATION_ACTIVATE = `${API_ENDPOINT}/auth/registration/activate`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_AUTH_REGISTRATION_CONFIRM = `${API_ENDPOINT}/auth/registration/confirm`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_AUTH_FORGOT_EMAIL = `${API_ENDPOINT}/auth/forgot/email`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_AUTH_FORGOT = `${API_ENDPOINT}/auth/forgot`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_AUTH_RESET = `${API_ENDPOINT}/auth/reset`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_AUTH_RESET_CURRENT = `${API_ENDPOINT}/auth/reset/current`;</span>
+&nbsp;
+// ChatApi
+export const <span class="cstat-no" title="statement not covered" >API_CHAT = `${API_ENDPOINT}/chat`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_CHAT_USERS = `${API_ENDPOINT}/chat/users`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_CHAT_CREATE = `${API_ENDPOINT}/chat/create`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_CHAT_MESSAGES = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span>c</span>hatId: number) =&gt; <span class="cstat-no" title="statement not covered" >`${API_ENDPOINT}/chat/${chatId}/messages`;</span></span>
+export const <span class="cstat-no" title="statement not covered" >API_CHAT_READ_MESSAGES = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span>c</span>hatId: number) =&gt; <span class="cstat-no" title="statement not covered" >`${API_ENDPOINT}/chat/${chatId}/read/messages`;</span></span>
+export const <span class="cstat-no" title="statement not covered" >API_CHAT_ADD_MESSAGE = `${API_ENDPOINT}/chat/add/message`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_CHAT_ADD_MESSAGE_TWEET = `${API_ENDPOINT}/chat/add/message/tweet`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_CHAT_PARTICIPANT = `${API_ENDPOINT}/chat/participant`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_CHAT_LEAVE = `${API_ENDPOINT}/chat/leave`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_CHAT_SEARCH = `${API_ENDPOINT}/chat/items/search`;</span>
+&nbsp;
+// ListsApi
+export const <span class="cstat-no" title="statement not covered" >API_LISTS = `${API_ENDPOINT}/lists`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_LISTS_USER = `${API_ENDPOINT}/lists/user`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_LISTS_USER_CONSIST = `${API_ENDPOINT}/lists/user/consist`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_LISTS_PINNED = `${API_ENDPOINT}/lists/pined`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_LISTS_FOLLOW = `${API_ENDPOINT}/lists/follow`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_LISTS_PIN = `${API_ENDPOINT}/lists/pin`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_LISTS_ADD_USER = `${API_ENDPOINT}/lists/add/user`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_LISTS_TWEETS = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span>l</span>istId: number) =&gt; <span class="cstat-no" title="statement not covered" >`${API_ENDPOINT}/lists/${listId}/tweets`;</span></span>
+export const <span class="cstat-no" title="statement not covered" >API_LISTS_DETAILS = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span>l</span>istId: number) =&gt; <span class="cstat-no" title="statement not covered" >`${API_ENDPOINT}/lists/${listId}/details`;</span></span>
+export const <span class="cstat-no" title="statement not covered" >API_LISTS_FOLLOWERS = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span>l</span>istId: number, listOwnerId: number) =&gt; <span class="cstat-no" title="statement not covered" >`${API_ENDPOINT}/lists/${listId}/${listOwnerId}/followers`;</span></span>
+export const <span class="cstat-no" title="statement not covered" >API_LISTS_MEMBERS = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span>l</span>istId: number, listOwnerId: number) =&gt; <span class="cstat-no" title="statement not covered" >`${API_ENDPOINT}/lists/${listId}/${listOwnerId}/members`;</span></span>
+export const <span class="cstat-no" title="statement not covered" >API_LISTS_SEARCH = `${API_ENDPOINT}/lists/search`;</span>
+&nbsp;
+// TagApi
+export const <span class="cstat-no" title="statement not covered" >API_TAGS = `${API_ENDPOINT}/tags`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_TAGS_TRENDS = `${API_ENDPOINT}/tags/trends`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_TAGS_SEARCH = `${API_ENDPOINT}/tags/search`;</span>
+&nbsp;
+// TopicApi
+export const <span class="cstat-no" title="statement not covered" >API_TOPICS = `${API_ENDPOINT}/topics`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_TOPICS_SUGGESTED = `${API_ENDPOINT}/topics/suggested`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_TOPICS_CATEGORY = `${API_ENDPOINT}/topics/category`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_TOPICS_FOLLOWED = `${API_ENDPOINT}/topics/followed`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_TOPICS_NOT_INTERESTED = `${API_ENDPOINT}/topics/not_interested`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_TOPICS_FOLLOW = `${API_ENDPOINT}/topics/follow`;</span>
+&nbsp;
+// TweetApi
+export const <span class="cstat-no" title="statement not covered" >API_TWEETS = `${API_ENDPOINT}/tweets`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_TWEETS_MEDIA = `${API_ENDPOINT}/tweets/media`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_TWEETS_VIDEO = `${API_ENDPOINT}/tweets/video`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_TWEETS_FOLLOWER = `${API_ENDPOINT}/tweets/follower`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_TWEETS_SCHEDULE = `${API_ENDPOINT}/tweets/schedule`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_TWEETS_INFO = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span>t</span>weetId: number) =&gt; <span class="cstat-no" title="statement not covered" >`${API_ENDPOINT}/tweets/${tweetId}/info`;</span></span>
+export const <span class="cstat-no" title="statement not covered" >API_TWEETS_REPLIES = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span>t</span>weetId: number) =&gt; <span class="cstat-no" title="statement not covered" >`${API_ENDPOINT}/tweets/${tweetId}/replies`;</span></span>
+export const <span class="cstat-no" title="statement not covered" >API_TWEETS_QUOTES = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span>t</span>weetId: number) =&gt; <span class="cstat-no" title="statement not covered" >`${API_ENDPOINT}/tweets/${tweetId}/quotes`;</span></span>
+export const <span class="cstat-no" title="statement not covered" >API_TWEETS_LIKED_USERS = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span>t</span>weetId: number) =&gt; <span class="cstat-no" title="statement not covered" >`${API_ENDPOINT}/tweets/${tweetId}/liked-users`;</span></span>
+export const <span class="cstat-no" title="statement not covered" >API_TWEETS_RETWEETED_USERS = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span>t</span>weetId: number) =&gt; <span class="cstat-no" title="statement not covered" >`${API_ENDPOINT}/tweets/${tweetId}/retweeted-users`;</span></span>
+export const <span class="cstat-no" title="statement not covered" >API_TWEETS_BOOKMARKED = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span>t</span>weetId: number) =&gt; <span class="cstat-no" title="statement not covered" >`${API_ENDPOINT}/tweets/${tweetId}/bookmarked`;</span></span>
+export const <span class="cstat-no" title="statement not covered" >API_TWEETS_IMAGE_TAGGED = `${API_ENDPOINT}/tweets/image/tagged`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_TWEETS_POOL = `${API_ENDPOINT}/tweets/poll`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_TWEETS_SEARCH = `${API_ENDPOINT}/tweets/search`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_TWEETS_LIKE = `${API_ENDPOINT}/tweets/like`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_TWEETS_RETWEET = `${API_ENDPOINT}/tweets/retweet`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_TWEETS_REPLY = `${API_ENDPOINT}/tweets/reply`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_TWEETS_QUOTE = `${API_ENDPOINT}/tweets/quote`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_TWEETS_CHANGE_REPLY = `${API_ENDPOINT}/tweets/reply/change`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_TWEETS_VOTE = `${API_ENDPOINT}/tweets/vote`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_TWEETS_USER_BOOKMARKS = `${API_ENDPOINT}/tweets/user/bookmarks`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_TWEETS_USER_LIKED = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span>u</span>serId: string | number) =&gt; <span class="cstat-no" title="statement not covered" >`${API_ENDPOINT}/tweets/liked/user/${userId}`;</span></span>
+export const <span class="cstat-no" title="statement not covered" >API_TWEETS_USER_REPLIES = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span>u</span>serId: string | number) =&gt; <span class="cstat-no" title="statement not covered" >`${API_ENDPOINT}/tweets/replies/user/${userId}`;</span></span>
+export const <span class="cstat-no" title="statement not covered" >API_TWEETS_USER_MEDIA = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span>u</span>serId: string | number) =&gt; <span class="cstat-no" title="statement not covered" >`${API_ENDPOINT}/tweets/media/user/${userId}`;</span></span>
+export const <span class="cstat-no" title="statement not covered" >API_TWEETS_USER_TWEETS = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span>u</span>serId: string | number) =&gt; <span class="cstat-no" title="statement not covered" >`${API_ENDPOINT}/tweets/user/${userId}`;</span></span>
+export const <span class="cstat-no" title="statement not covered" >API_TWEETS_IMAGES = `${API_ENDPOINT}/tweets/images`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_TWEETS_UPLOAD = `${API_ENDPOINT}/tweets/upload`;</span>
+&nbsp;
+// UserApi
+export const <span class="cstat-no" title="statement not covered" >API_USER = `${API_ENDPOINT}/user`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_USER_ALL = `${API_ENDPOINT}/user/all`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_USER_RELEVANT = `${API_ENDPOINT}/user/relevant`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_USER_SEARCH_USERNAME = `${API_ENDPOINT}/user/items/search`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_USER_SEARCH_TEXT = `${API_ENDPOINT}/user/search`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_USER_SEARCH_RESULTS = `${API_ENDPOINT}/user/search/results`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_USER_UPLOAD_IMAGE = `${API_ENDPOINT}/user/upload`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_USER_FOLLOWERS = `${API_ENDPOINT}/user/followers`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_USER_FOLLOWING = `${API_ENDPOINT}/user/following`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_USER_FOLLOWER_REQUESTS = `${API_ENDPOINT}/user/follower-requests`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_USER_FOLLOW = `${API_ENDPOINT}/user/follow`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_USER_FOLLOW_OVERALL = `${API_ENDPOINT}/user/follow/overall`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_USER_FOLLOW_PRIVATE = `${API_ENDPOINT}/user/follow/private`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_USER_FOLLOW_ACCEPT = `${API_ENDPOINT}/user/follow/accept`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_USER_FOLLOW_DECLINE = `${API_ENDPOINT}/user/follow/decline`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_USER_SUBSCRIBE = `${API_ENDPOINT}/user/subscribe`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_NOTIFICATION = `${API_ENDPOINT}/notification`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_NOTIFICATION_USER = `${API_ENDPOINT}/notification/user`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_NOTIFICATION_MENTIONS = `${API_ENDPOINT}/notification/mentions`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_NOTIFICATION_SUBSCRIBES = `${API_ENDPOINT}/notification/subscribes`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_NOTIFICATION_TIMELINE = `${API_ENDPOINT}/notification/timeline`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_USER_START = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span>u</span>serId: number) =&gt; <span class="cstat-no" title="statement not covered" >`${API_ENDPOINT}/user/start`;</span></span>
+export const <span class="cstat-no" title="statement not covered" >API_USER_PIN_TWEET = `${API_ENDPOINT}/user/pin/tweet`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_USER_BLOCKED = `${API_ENDPOINT}/user/blocked`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_USER_MUTED = `${API_ENDPOINT}/user/muted`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_USER_DETAILS = `${API_ENDPOINT}/user/details`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_USER_TOKEN = `${API_ENDPOINT}/user/token`;</span>
+&nbsp;
+// UserSettingsApi
+export const <span class="cstat-no" title="statement not covered" >API_SETTINGS_UPDATE_USERNAME = `${API_ENDPOINT}/settings/update/username`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_SETTINGS_UPDATE_EMAIL = `${API_ENDPOINT}/settings/update/email`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_SETTINGS_UPDATE_PHONE = `${API_ENDPOINT}/settings/update/phone`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_SETTINGS_UPDATE_COUNTRY = `${API_ENDPOINT}/settings/update/country`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_SETTINGS_UPDATE_GENDER = `${API_ENDPOINT}/settings/update/gender`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_SETTINGS_UPDATE_LANGUAGE = `${API_ENDPOINT}/settings/update/language`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_SETTINGS_UPDATE_DIRECT = `${API_ENDPOINT}/settings/update/direct`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_SETTINGS_UPDATE_PRIVATE = `${API_ENDPOINT}/settings/update/private`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_SETTINGS_UPDATE_COLOR_SCHEME = `${API_ENDPOINT}/settings/update/color_scheme`;</span>
+export const <span class="cstat-no" title="statement not covered" >API_SETTINGS_UPDATE_BACKGROUND_COLOR = `${API_ENDPOINT}/settings/update/background_color`;</span>
+&nbsp;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2023-06-14T09:10:22.928Z
+            </div>
+        <script src="../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../sorter.js"></script>
+        <script src="../../block-navigation.js"></script>
+    </body>
+</html>
+    

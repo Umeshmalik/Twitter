@@ -1,0 +1,382 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/constants/path-constants.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/constants</a> path-constants.ts</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/92</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/92</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input oninput="onInput()" type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export const <span class="cstat-no" title="statement not covered" >ROOT = "/";</span>
+export const <span class="cstat-no" title="statement not covered" >HOME = "/home";</span>
+export const <span class="cstat-no" title="statement not covered" >HOME_TWEET = HOME + "/tweet";</span>
+export const <span class="cstat-no" title="statement not covered" >HOME_TRENDS = HOME + "/trends";</span>
+export const <span class="cstat-no" title="statement not covered" >HOME_CONNECT = HOME + "/connect";</span>
+&nbsp;
+export const <span class="cstat-no" title="statement not covered" >ACCOUNT = "/account";</span>
+export const <span class="cstat-no" title="statement not covered" >ACCOUNT_SIGNIN = ACCOUNT + "/signin";</span>
+export const <span class="cstat-no" title="statement not covered" >ACCOUNT_LOGIN = ACCOUNT + "/login";</span>
+export const <span class="cstat-no" title="statement not covered" >ACCOUNT_FORGOT = ACCOUNT + "/forgot";</span>
+export const <span class="cstat-no" title="statement not covered" >ACCOUNT_FORGOT_SEND_PASSWORD_RESET = ACCOUNT_FORGOT + "/send_password_reset";</span>
+export const <span class="cstat-no" title="statement not covered" >ACCOUNT_FORGOT_CONFIRM_PIN_RESET = ACCOUNT_FORGOT + "/confirm_pin_reset";</span>
+export const <span class="cstat-no" title="statement not covered" >ACCOUNT_FORGOT_RESET_PASSWORD = ACCOUNT_FORGOT + "/reset_password";</span>
+export const <span class="cstat-no" title="statement not covered" >ACCOUNT_FORGOT_PASSWORD_RESET_COMPLETE = ACCOUNT_FORGOT + "/password_reset_complete";</span>
+&nbsp;
+export const <span class="cstat-no" title="statement not covered" >NOTIFICATIONS = "/notifications";</span>
+export const <span class="cstat-no" title="statement not covered" >NOTIFICATIONS_TIMELINE = NOTIFICATIONS + "/timeline";</span>
+export const <span class="cstat-no" title="statement not covered" >NOTIFICATIONS_MENTIONS = NOTIFICATIONS + "/mentions";</span>
+export const <span class="cstat-no" title="statement not covered" >NOTIFICATION = "/notification";</span>
+&nbsp;
+export const <span class="cstat-no" title="statement not covered" >MESSAGES = "/messages";</span>
+export const <span class="cstat-no" title="statement not covered" >MESSAGES_SETTINGS = MESSAGES + "/settings";</span>
+&nbsp;
+export const <span class="cstat-no" title="statement not covered" >TOPICS = "/topics";</span>
+export const <span class="cstat-no" title="statement not covered" >TOPICS_FOLLOWED = TOPICS + "/followed";</span>
+export const <span class="cstat-no" title="statement not covered" >TOPICS_SUGGESTED = TOPICS + "/suggested";</span>
+export const <span class="cstat-no" title="statement not covered" >TOPICS_NOT_INTERESTED = TOPICS + "/not_interested";</span>
+&nbsp;
+export const <span class="cstat-no" title="statement not covered" >BOOKMARKS = "/bookmarks";</span>
+export const <span class="cstat-no" title="statement not covered" >SUGGESTED = "/suggested";</span>
+export const <span class="cstat-no" title="statement not covered" >LISTS = "/lists";</span>
+export const <span class="cstat-no" title="statement not covered" >LISTS_MEMBERSHIPS = LISTS + "/memberships";</span>
+export const <span class="cstat-no" title="statement not covered" >PROFILE = "/profile";</span>
+export const <span class="cstat-no" title="statement not covered" >PROFILE_PHOTO = PROFILE + "/photo";</span>
+export const <span class="cstat-no" title="statement not covered" >PROFILE_HEADER_PHOTO = PROFILE + "/header_photo";</span>
+&nbsp;
+export const <span class="cstat-no" title="statement not covered" >USER = "/user";</span>
+export const <span class="cstat-no" title="statement not covered" >USER_FOLLOWERS_YOU_FOLLOW = USER + "/followers_you_follow";</span>
+&nbsp;
+export const <span class="cstat-no" title="statement not covered" >MODAL = "/modal";</span>
+export const <span class="cstat-no" title="statement not covered" >SEARCH = "/search";</span>
+export const <span class="cstat-no" title="statement not covered" >QUOTES = "/quotes";</span>
+&nbsp;
+export const <span class="cstat-no" title="statement not covered" >SETTINGS = "/settings";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_SECURITY_AND_ACCOUNT_ACCESS = SETTINGS + "/security_and_account_access";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_PRIVACY_AND_SAFETY = SETTINGS + "/privacy_and_safety";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_NOTIFICATION = SETTINGS + "/notification";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_ACCESSIBILITY_DISPLAY_AND_LANGUAGES = SETTINGS + "/accessibility_display_and_languages";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_ABOUT = SETTINGS + "/about";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_INFO = SETTINGS + "/info";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_INFO_USERNAME = SETTINGS_INFO + "/username";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_INFO_PHONE = SETTINGS_INFO + "/phone";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_INFO_EMAIL = SETTINGS_INFO + "/email";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_INFO_COUNTRY = SETTINGS_INFO + "/country";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_INFO_LANGUAGES = SETTINGS_INFO + "/languages";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_INFO_GENDER = SETTINGS_INFO + "/gender";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_INFO_AGE = SETTINGS_INFO + "/age";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_PASSWORD = SETTINGS + "/password";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_TEAMS = SETTINGS + "/teams";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_DEACTIVATE = SETTINGS + "/deactivate";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_SECURITY = SETTINGS + "/security";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_SECURITY_LOGIN_VERIFICATION = SETTINGS_SECURITY + "/login_verification";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_SECURITY_APPS_AND_SESSIONS = SETTINGS_SECURITY + "/apps_and_sessions";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_SECURITY_CONNECTED_APPS = SETTINGS_SECURITY + "/connected_apps";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_SECURITY_SESSIONS = SETTINGS_SECURITY + "/sessions";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_SECURITY_SESSIONS_CURRENT = SETTINGS_SECURITY_SESSIONS + "/current";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_SECURITY_LOGIN_HISTORY = SETTINGS_SECURITY + "/login_history";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_SECURITY_DEVICES = SETTINGS_SECURITY + "/devices";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_PRIVACY_AND_SAFETY_AUDIENCE = SETTINGS_PRIVACY_AND_SAFETY + "/audience";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_PRIVACY_AND_SAFETY_TAGGING = SETTINGS_PRIVACY_AND_SAFETY + "/tagging";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_PRIVACY_AND_SAFETY_YOUR_TWEETS = SETTINGS_PRIVACY_AND_SAFETY + "/your_tweets";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_PRIVACY_AND_SAFETY_LOCATION = SETTINGS_PRIVACY_AND_SAFETY + "/location";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_PRIVACY_AND_SAFETY_CONTENT_YOU_SEE = SETTINGS_PRIVACY_AND_SAFETY + "/content_you_see";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_PRIVACY_AND_SAFETY_MUTE_AND_BLOCK = SETTINGS_PRIVACY_AND_SAFETY + "/mute_and_block";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_PRIVACY_AND_SAFETY_BLOCKED = SETTINGS_PRIVACY_AND_SAFETY + "/blocked";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_PRIVACY_AND_SAFETY_MUTED = SETTINGS_PRIVACY_AND_SAFETY + "/muted";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_PRIVACY_AND_SAFETY_MUTED_KEYWORDS = SETTINGS_PRIVACY_AND_SAFETY + "/muted_keywords";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_PRIVACY_AND_SAFETY_ADVANCED_FILTERS = SETTINGS_PRIVACY_AND_SAFETY + "/advanced_filters";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_PRIVACY_AND_SAFETY_DIRECT_MESSAGES = SETTINGS_PRIVACY_AND_SAFETY + "/direct_messages";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_PRIVACY_AND_SAFETY_SPACES = SETTINGS_PRIVACY_AND_SAFETY + "/spaces";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_PRIVACY_AND_SAFETY_CONTACTS = SETTINGS_PRIVACY_AND_SAFETY + "/contacts";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_PRIVACY_AND_SAFETY_CONTACTS_DASHBOARD = SETTINGS_PRIVACY_AND_SAFETY + "/contacts_dashboard";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_PRIVACY_AND_SAFETY_ADS_PREFERENCES = SETTINGS_PRIVACY_AND_SAFETY + "/ads_preferences";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_PRIVACY_AND_SAFETY_AUDIENCES = SETTINGS_PRIVACY_AND_SAFETY + "/audiences";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_PRIVACY_AND_SAFETY_OFF_TWITTER_ACTIVITY = SETTINGS_PRIVACY_AND_SAFETY + "/off_twitter_activity";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_PRIVACY_AND_SAFETY_DATA_SHARING_WITH_BUSINESS_PARTNERS = SETTINGS_PRIVACY_AND_SAFETY + "/data_sharing_with_business_partners";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_PRIVACY_AND_SAFETY_LOCATION_INFORMATION = SETTINGS_PRIVACY_AND_SAFETY + "/location_information";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_PRIVACY_AND_SAFETY_LOCATIONS = SETTINGS_PRIVACY_AND_SAFETY + "/locations";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_NOTIFICATION_FILTERS = SETTINGS_NOTIFICATION + "/filters";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_NOTIFICATION_PREFERENCES = SETTINGS_NOTIFICATION + "/preferences";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_NOTIFICATION_PUSH_NOTIFICATIONS = SETTINGS_NOTIFICATION + "/push_notifications";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_NOTIFICATION_EMAIL_NOTIFICATIONS = SETTINGS_NOTIFICATION + "/email_notifications";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_ACCESSIBILITY_DISPLAY_AND_LANGUAGES_ACCESSIBILITY = SETTINGS_ACCESSIBILITY_DISPLAY_AND_LANGUAGES + "/accessibility";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_ACCESSIBILITY_DISPLAY_AND_LANGUAGES_DISPLAY = SETTINGS_ACCESSIBILITY_DISPLAY_AND_LANGUAGES + "/display";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_ACCESSIBILITY_DISPLAY_AND_LANGUAGES_LANGUAGES = SETTINGS_ACCESSIBILITY_DISPLAY_AND_LANGUAGES + "/languages";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_ACCESSIBILITY_DISPLAY_AND_LANGUAGES_DATA = SETTINGS_ACCESSIBILITY_DISPLAY_AND_LANGUAGES + "/data";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_ACCESSIBILITY_DISPLAY_AND_LANGUAGES_AUTOPLAY = SETTINGS_ACCESSIBILITY_DISPLAY_AND_LANGUAGES + "/autoplay";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_PERSONALIZATION = SETTINGS + "/personalization";</span>
+export const <span class="cstat-no" title="statement not covered" >SETTINGS_CONTENT_PREFERENCES = SETTINGS + "/content_preferences";</span>
+export const <span class="cstat-no" title="statement not covered" >FOLLOW_AND_UNFOLLOW_TOPICS = "https://help.twitter.com/using-twitter/follow-and-unfollow-topics";</span></pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2023-06-14T09:10:22.928Z
+            </div>
+        <script src="../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../sorter.js"></script>
+        <script src="../../block-navigation.js"></script>
+    </body>
+</html>
+    
